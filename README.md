@@ -2,7 +2,7 @@
 
 Sort your chaos into neat folders.
 
-A lightweight Python script that organizes files in a folder by type — Images, Videos, Audio, Documents, Archives, Code, Executables, and Others.
+A lightweight Python script that organizes files in a folder by type, Images, Videos, Audio, Documents, Archives, Code, Executables, and Others.
 
 ![Version](https://img.shields.io/badge/version-1.2-blue)
 ![Python](https://img.shields.io/badge/python-3.8+-green)
