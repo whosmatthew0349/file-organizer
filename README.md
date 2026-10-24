@@ -1,7 +1,6 @@
 # M_File_Helper
-===================
 THIS HAS NOT BEEN TESTED! MAY HAVE BUGS!
-===================
+=====================================
 This Python script organizes files in a folder by moving them into subfolders based on their file type.By default it works on your Downloads folder.HOW IT WORKSIt looks at every file in the chosen folder.
 It checks the file extension (for example .jpg, .pdf, .mp3).
 It decides which category the file belongs to:Images (.jpg, .png, .gif, etc.)
