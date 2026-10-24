@@ -48,5 +48,5 @@ A lightweight Python script that organizes files in a folder by type — Images,
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/file-organizer.git
+git clone https://github.com/whosmatthew0349/file-organizer.git
 cd file-organizer
