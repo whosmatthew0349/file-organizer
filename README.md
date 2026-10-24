@@ -1,42 +1,57 @@
 # M_File_Helper
-THIS HAS NOT BEEN TESTED! MAY HAVE BUGS!
-=====================================
-This Python script organizes files in a folder by moving them into subfolders based on their file type.By default it works on your Downloads folder.HOW IT WORKSIt looks at every file in the chosen folder.
-It checks the file extension (for example .jpg, .pdf, .mp3).
-It decides which category the file belongs to:Images (.jpg, .png, .gif, etc.)
-Videos (.mp4, .mkv, .mov, etc.)
-Audio (.mp3, .wav, .flac, etc.)
-Documents (.pdf, .docx, .txt, etc.)
-Archives (.zip, .rar, .7z, etc.)
-Code (.py, .js, .html, etc.)
-Executables (.exe, .bat, .sh, etc.)
-Anything else goes into "Others"
 
-It creates a subfolder for that category (if it does not already exist).
-It moves the file into that subfolder.
-If a file with the same name already exists, it adds a number (photo_1.jpg, photo_2.jpg, etc.) so nothing gets overwritten.
+> ⚠️ **Warning:** This has not been tested and may contain bugs.
 
-OPTIONS--dry-run
-Shows what the script would do without actually moving any files.--skip-hidden
-Ignores hidden files (files that start with a dot or have the hidden attribute on Windows).--skip-system
-Ignores system files on Windows.HOW TO USEpython script_name.py
-→ Organizes your Downloads folderpython script_name.py /path/to/folder
-→ Organizes a different folderpython script_name.py --dry-run
-→ Preview the moves without changing anythingpython script_name.py --skip-hidden --skip-system
-→ Skip hidden and system filesEXAMPLEBefore:
-Downloads/
-  photo.jpg
-  report.pdf
-  song.mp3
-  photo.jpgAfter:
-Downloads/
-  Images/
-    photo.jpg
-    photo_1.jpg
-  Documents/
-    report.pdf
-  Audio/
-    song.mp3
-    
-  # The script only moves files. It does not touch folders or files it cannot read.
+A simple Python script that organizes files in a folder by moving them into subfolders based on their file type.
 
+By default, it works on your **Downloads** folder.
+
+---
+
+## How It Works
+
+1. Looks at every file in the chosen folder.
+2. Checks the file extension (e.g. `.jpg`, `.pdf`, `.mp3`).
+3. Places the file into the matching category:
+
+| Category     | Extensions                                      |
+|--------------|--------------------------------------------------|
+| **Images**   | `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.bmp`, `.svg`, `.heic` |
+| **Videos**   | `.mp4`, `.mkv`, `.avi`, `.mov`, `.wmv`, `.flv`  |
+| **Audio**    | `.mp3`, `.wav`, `.flac`, `.aac`, `.ogg`, `.m4a` |
+| **Documents**| `.pdf`, `.doc`, `.docx`, `.txt`, `.rtf`, `.odt`, `.xls`, `.xlsx`, `.ppt`, `.pptx`, `.csv` |
+| **Archives** | `.zip`, `.rar`, `.7z`, `.tar`, `.gz`            |
+| **Code**     | `.py`, `.js`, `.html`, `.css`, `.java`, `.cpp`, `.c`, `.ts`, `.json`, `.xml` |
+| **Executables** | `.exe`, `.msi`, `.dmg`, `.app`, `.bat`, `.sh` |
+| **Others**   | Everything else                                  |
+
+4. Creates the category subfolder if it doesn’t already exist.
+5. Moves the file into that subfolder.
+6. If a file with the same name already exists, it adds a number (`photo_1.jpg`, `photo_2.jpg`, etc.) so nothing gets overwritten.
+
+---
+
+## Options
+
+| Flag              | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| `--dry-run`       | Shows what the script would do without actually moving any files            |
+| `--skip-hidden`   | Ignores hidden files (names starting with `.` or Windows hidden attribute)  |
+| `--skip-system`   | Ignores system files on Windows                                             |
+
+---
+
+## How to Use
+
+```bash
+# Organize your Downloads folder
+python m_file_helper.py
+
+# Organize a different folder
+python m_file_helper.py /path/to/folder
+
+# Preview the moves without changing anything
+python m_file_helper.py --dry-run
+
+# Skip hidden and system files
+python m_file_helper.py --skip-hidden --skip-system
