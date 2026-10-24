@@ -44,6 +44,29 @@ A lightweight Python script that organizes files in a folder by type — Images,
 - No external packages needed
 
 ---
+## Example
+╔══════════════════════════════════════════╗
+║          FILE ORGANIZER  v1.2            ║
+║     Sort your chaos into neat folders    ║
+║    Created by @whos.matthew on Discord!  ║
+╚══════════════════════════════════════════╝
+
+  Target : C:\Users\You\Downloads
+  Mode   : LIVE
+
+  ✓  vacation.jpg     →  Images/vacation.jpg
+  ✓  report.pdf       →  Documents/report.pdf
+  ✓  song.mp3         →  Audio/song.mp3
+  ✓  archive.zip      →  Archives/archive.zip
+
+Summary (moved):
+  Audio           1
+  Archives        1
+  Documents       1
+  Images          1
+  ────────────────────
+  Total           4
+---
 
 ## Installation
 
