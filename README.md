@@ -1,6 +1,6 @@
 # M_File_Helper
 
-> ⚠️ **Warning:** This has not been tested and may contain bugs.
+> ⚠️ **Warning:** Once the file is ran it starts moving everything! do not use this unless your sure you wanna do it!
 
 A simple Python script that organizes files in a folder by moving them into subfolders based on their file type.
 
